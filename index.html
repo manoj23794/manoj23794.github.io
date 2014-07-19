@@ -1,74 +1,116 @@
 <!DOCTYPE html>
-<html>
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<title>Manoj|Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body background="images/Bg.jpg">
+<div class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+<a href="#" color="blue" class="navbar-brand">Manoj Selvam</a>
+<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse navHeaderCollapse">
+<ul class="nav navbar-nav navbar-right">
+<li  class="active"><a href="#">Home</a></li>
+<li><a href="aboutme.html">AboutMe</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="c.html">C</a></li>
+<li><a href="cpp.html">C++</a></li>
+<li><a href="java.html">JAVA</a></li>
+<li><a href="ht.html">HTML</a></li>
+<li><a href="ror.html">RoR</a></li>
+</ul>
+</li>
+<li><a href="#contact" data-toggle="modal">MessageMe</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal fade" id="contact" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form class="form-horizontal">
+			<div class="modal-header">
+				<h4>Ping Me!</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Name:</label>
+					<div class="col-lg-10">
+						<input tpye="text" class="form-control" id="contact-name" placeholder="Enter your name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Mail ID:</label>
+					<div class="col-lg-10">
+						<input tpye="email" class="form-control" id="contact-name" placeholder="you@example.com">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Your Message:</label>
+					<div class="col-lg-10">
+						<textarea class="form-control" rows="6"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="btn btn-primary" data-dismiss="modal">cancel</a>
+				<a class="btn btn-default" data-dismiss="modal">send</a>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+<div class="container">
+<div class="jumbotron">
+<h1 class="text-center">Welcome!</h1>
+<p class="text-center">This is my first WebSite!<br>Scroll through for more.<br>Thanks for viewing it.</p>
+<center><a class="btn btn-info ">Parallax</a></center>
+</div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+<div class="container">
+<p class="navbar-text pull-left">Site built by Manoj</p>
+<a href="https://www.facebook.com/manoj007selvam?ref=tn_tnmn" class="navbar-button btn pull-right"><img src="images/Facebook.png"></a>
+<a href="http://www.gmail.com" class="navbar-button btn pull-right"><img src="images/Email.png"></a>
+<a href="https://www.linkedin.com/profile/view?id=95086599&trk=nav_responsive_tab_profile" class="navbar-button btn pull-right"><img src="images/Linkedin.png"></a>
+<a href="http://www.quora.com/Manoj-Selvam-3" class="navbar-button btn pull-right"><img src="images/Quora.png"></a>
+<a href="http://youtube.com" class="navbar-button btn pull-right"><img src="images/Youtube.png"></a
+</div>
+</div>
+<style> 
+img {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Manoj23794.github.io : My page" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Manoj23794.github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/manoj23794">View on GitHub</a>
-
-          <h1 id="project_title">Manoj23794.github.io</h1>
-          <h2 id="project_tagline">My page</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+img:hover {
     
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+a {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
 
-  </body>
+a:hover {
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
 </html>
