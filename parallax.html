@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>parallax</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<style type="text/css">
+body{margin:0px; backgroung:url(images/image2.jpg) fixed;}
+#plx1{
+	position: fixed;
+	background: url(images/c1.jpg) no-repeat 0px 100px;
+	width: 100%;
+	height: 800px;
+}
+#plx2{
+	position: fixed;
+	background: url(images/c2.jpg) no-repeat 0px 100px;
+	width: 100%;
+	height: 400px;
+}
+#content_layer{position:absolute;}
+body
+{
+margin-bottom:80px
+}
+</style>
+<script>
+function parallax()
+{
+	var plx1=document.getElementById('plx1');
+	var plx2=document.getElementById('plx2');
+	plx1.style.top=-(window.pageYOffset/2)+'px';
+	plx2.style.top=-(window.pageYOffset/6)+'px';
+}
+window.addEventListener("scroll",parallax,false);
+</script>
+<body background="images/Bg.jpg">
+<div class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+<a href="#" color="blue" class="navbar-brand">ManojSelvam</a>
+<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse navHeaderCollapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">AboutMe</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="http://www.google.com">C</a></li>
+<li><a href="http://www.facebook.com">C++</a></li>
+<li><a href="http://www.youtube.com">JAVA</a></li>
+<li><a href="http://www.quora.com">HTML</a></li>
+<li><a href="http://www.quora.com">RoR</a></li>
+</ul>
+</li>
+<li><a href="#">MessageMe</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="plx1"></div>
+<div id="plx2"></div>
+<div id="content_layer">
+</div>
+<div>
+	<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</P>
+</div>	
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+<div class="container">
+<p class="navbar-text pull-left">Site built by Manoj</p>
+<a href="https://www.facebook.com/manoj007selvam?ref=tn_tnmn" class="navbar-button btn pull-right"><img src="images/Facebook.png"></a>
+<a href="http://www.gmail.com" class="navbar-button btn pull-right"><img src="images/Email.png"></a>
+<a href="https://www.linkedin.com/profile/view?id=95086599&trk=nav_responsive_tab_profile" class="navbar-button btn pull-right"><img src="images/Linkedin.png"></a>
+<a href="http://www.quora.com/Manoj-Selvam-3" class="navbar-button btn pull-right"><img src="images/Quora.png"></a>
+<a href="http://youtube.com" class="navbar-button btn pull-right"><img src="images/Youtube.png"></a
+</div>
+</div>
+<style> 
+button {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+button:hover {
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+a {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+a:hover {
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

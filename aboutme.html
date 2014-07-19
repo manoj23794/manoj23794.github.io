@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<title>Manoj|AboutMe</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body background="images/Bg.jpg">
+<div class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+<a href="#" color="blue" class="navbar-brand">Manoj Selvam</a>
+<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse navHeaderCollapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li class="active"><a href="#">AboutMe</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="c.html">C</a></li>
+<li><a href="cpp.html">C++</a></li>
+<li><a href="java.html">JAVA</a></li>
+<li><a href="ht.html">HTML</a></li>
+<li><a href="ror.html">RoR</a></li>
+</ul>
+</li>
+<li><a href="#contact" data-toggle="modal">MessageMe</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal fade" id="contact" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form class="form-horizontal">
+			<div class="modal-header">
+				<h4>Ping Me!</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Name:</label>
+					<div class="col-lg-10">
+						<input tpye="text" class="form-control" id="contact-name" placeholder="Enter your name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Mail ID:</label>
+					<div class="col-lg-10">
+						<input tpye="email" class="form-control" id="contact-name" placeholder="you@example.com">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Your Message:</label>
+					<div class="col-lg-10">
+						<textarea class="form-control" rows="6"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="btn btn-primary" data-dismiss="modal">cancel</a>
+				<a class="btn btn-default" data-dismiss="modal">send</a>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<img src="images/manoj.jpg" height="350" opacity="20" width="250">
+</div>
+<div class="col-md-8">
+<h1><font color="white">AboutMe</font></h1>
+<p><font color="white">Hey! This is Manoj Selvam,age 20,an Computer Science Engineering student in Rajalakshmi Engineering College,Thandalam.I'm a newbie.I dunno anything about Web Development and no interest in learning it until my friend urged me in this exciting world of web development.This is my first WebSite and excitied to learn a lot from this world of web development.</font></p><hr>
+<h1><font color="white">What I Did.</font></h1>
+<p><font color="white">I created this static web site using HTML5 and little of CSS and jQuery(Bootstrap 3). i dont know much about them but tried to understand and applied them(sources internet).The new thing is that i've tried the exciting parallax scrolling(you can navigate to interests tab)check it out scroll it out! :).It is an effect created as a difference in speed between multiple background.I've tried it with the same content(c,c++,java,HTML,RoR)with different heading.(dont mind :P).i gave a try!hope its fine! :)</font></p>
+<hr>
+
+</div>
+</div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+<div class="container">
+<p class="navbar-text pull-left">Site built by Manoj</p>
+<a href="https://www.facebook.com/manoj007selvam?ref=tn_tnmn" class="navbar-button btn pull-right"><img src="images/Facebook.png"></a>
+<a href="http://www.gmail.com" class="navbar-button btn pull-right"><img src="images/Email.png"></a>
+<a href="https://www.linkedin.com/profile/view?id=95086599&trk=nav_responsive_tab_profile" class="navbar-button btn pull-right"><img src="images/Linkedin.png"></a>
+<a href="http://www.quora.com/Manoj-Selvam-3" class="navbar-button btn pull-right"><img src="images/Quora.png"></a>
+<a href="http://youtube.com" class="navbar-button btn pull-right"><img src="images/Youtube.png"></a
+</div>
+</div>
+<style> 
+button {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+button:hover {
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+a {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+a:hover {
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
